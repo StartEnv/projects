@@ -4,7 +4,9 @@
 name = "Project name" # The name of the project
 repository_path = "example/project" # The path of the repository
 repository_url = "https://github.com/example/project" # The full URL to this repository
+docker_compose_path = "docker-compose.yml"
 fork_repository_url = "https://github.com/startenv/project" # The full override repository, in case it requires changes and these changes cannot be merged back into the original repository.
+default_port = 80 # Default port of the application
 
 # All commands that should be run inside the VM before docker can be built.
 # These commands are executed only once.

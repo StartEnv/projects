@@ -1,0 +1,27 @@
+# TEMPLATE FILE
+
+[general]
+name = "Project name" # The name of the project
+repository_path = "example/project" # The path of the repository
+repository_url = "https://github.com/example/project" # The full URL to this repository
+fork_repository_url = "https://github.com/startenv/project" # The full override repository, in case it requires changes and these changes cannot be merged back into the original repository.
+
+# All commands that should be run inside the VM before docker can be built.
+# These commands are executed only once.
+[pre_install]
+commands = [
+    "sudo ./install.sh"
+]
+
+# Commands that should be executed everytime before starting up the docker containers.
+[pre_run]
+commands = []
+
+# Commands that should be executed after starting up the docker containers.
+[post_run]
+commands = []
+
+[environment]
+# In case missing environment variables you can add defaults here.
+# KEY = "VALUE"
+# HOST = "${PROJECT_DOMAIN}"

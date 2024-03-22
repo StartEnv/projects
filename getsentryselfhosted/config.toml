@@ -1,0 +1,24 @@
+[general]
+name = "Sentry (Self Hosted)" # The name of the project
+repository_path = "getsentry/self-hosted" # The path of the repository
+repository_url = "https://github.com/getsentry/self-hosted" # The full URL to this repository
+
+# All commands that should be run inside the VM before docker can be built.
+# These commands are executed only once.
+[pre_install]
+commands = [
+    "sudo ./install.sh --skip-user-creation --skip-commit-check --report-self-hosted-issues"
+]
+
+# Commands that should be executed everytime before starting up the docker containers.
+[pre_run]
+commands = []
+
+# Commands that should be executed after starting up the docker containers.
+[post_run]
+commands = []
+
+[environment]
+# In case missing environment variables you can add defaults here.
+# KEY = "VALUE"
+# HOST = "${PROJECT_DOMAIN}"

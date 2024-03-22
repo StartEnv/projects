@@ -1,0 +1,18 @@
+[general]
+name = "Financial Freedom"
+repository_path = "serversideup/financial-freedom"
+repository_url = "https://github.com/serversideup/financial-freedom"
+
+[pre_install]
+commands = [
+    "cp .env.example .env",
+]
+
+[pre_run]
+commands = []
+
+[post_run]
+commands = []
+
+[environment]
+MARIADB_ROOT_PASSWORD = "financialfreedom_dbpassword"

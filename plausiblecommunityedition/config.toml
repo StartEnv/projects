@@ -4,8 +4,8 @@
 name = "Plausible community edition" # The name of the project
 repository_path = "plausible/community-edition" # The path of the repository
 repository_url = "https://github.com/plausible/community-edition" # The full URL to this repository
-default_port = 3001
-extra_ports = [3001]
+default_port = 8000
+extra_ports = []
 
 # All commands that should be run inside the VM before docker can be built.
 # These commands are executed only once.

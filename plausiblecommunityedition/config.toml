@@ -11,8 +11,8 @@ extra_ports = [3001]
 # These commands are executed only once.
 [pre_install]
 commands = [
-    "sed -i 's/^BASE_URL=.*/BASE_URL=https://${PROJECT_DOMAIN}' plausible-conf.env",
-    "sed -i 's/^SECRET_KEY_BASE=.*/SECRET_KEY_BASE=${RANDOM_BYTES_32}' plausible-conf.env"
+    "sed -i 's|^BASE_URL=.*|BASE_URL=https://${PROJECT_DOMAIN}|' plausible-conf.env",
+    "sed -i 's|^SECRET_KEY_BASE=.*|SECRET_KEY_BASE=${RANDOM_BYTES_32}|' plausible-conf.env"
 ]
 
 # Commands that should be executed everytime before starting up the docker containers.

@@ -1,0 +1,20 @@
+# TEMPLATE FILE
+
+[general]
+name = "Growthbook"
+repository_path = "growthbook/growthbook"
+repository_url = "https://github.com/growthbook/growthbook"
+docker_compose_path = "docker-compose.yml"
+default_port = 3000
+extra_ports = [3000, 3100]
+
+[pre_install]
+commands = []
+
+[pre_run]
+commands = []
+
+[post_run]
+commands = []
+
+[environment]

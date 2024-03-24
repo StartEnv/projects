@@ -4,6 +4,7 @@
 name = "Growthbook"
 repository_path = "growthbook/growthbook"
 repository_url = "https://github.com/growthbook/growthbook"
+fork_repository_url = "https://github.com/StartEnv/growthbook"
 docker_compose_path = "docker-compose.yml"
 default_port = 3000
 extra_ports = [3100]
@@ -18,3 +19,4 @@ commands = []
 commands = []
 
 [environment]
+PROJECT_DOMAIN = "${PROJECT_DOMAIN}"

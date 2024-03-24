@@ -9,9 +9,6 @@ default_port = 5678
 # All commands that should be run inside the VM before docker can be built.
 # These commands are executed only once.
 [pre_install]
-commands = [
-    # "echo 'WEBHOOK_URL=https://${PROJECT_DOMAIN}/' >> docker/compose/withPostgres/.env"
-]
 
 # Commands that should be executed everytime before starting up the docker containers.
 [pre_run]

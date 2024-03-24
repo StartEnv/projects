@@ -1,0 +1,26 @@
+[general]
+name = "N8N"
+repository_path = "n8n-io/n8n"
+repository_url = "https://github.com/n8n-io/n8n"
+docker_compose_path = "docker/compose/withPostgres/docker-compose.yml"
+default_port = 5678
+
+# All commands that should be run inside the VM before docker can be built.
+# These commands are executed only once.
+[pre_install]
+commands = [
+    "echo 'WEBHOOK_URL=https://${PROJECT_DOMAIN}/' >> docker/compose/withPostgres/.env"
+]
+
+# Commands that should be executed everytime before starting up the docker containers.
+[pre_run]
+commands = []
+
+# Commands that should be executed after starting up the docker containers.
+[post_run]
+commands = []
+
+[environment]
+# In case missing environment variables you can add defaults here.
+# KEY = "VALUE"
+# HOST = "${PROJECT_DOMAIN}"

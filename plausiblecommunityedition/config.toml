@@ -4,6 +4,7 @@
 name = "Plausible community edition" # The name of the project
 repository_path = "plausible/community-edition" # The path of the repository
 repository_url = "https://github.com/plausible/community-edition" # The full URL to this repository
+fork_repository_url = "https://github.com/StartEnv/community-edition"
 default_port = 8000
 extra_ports = []
 

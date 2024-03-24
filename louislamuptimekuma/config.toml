@@ -5,7 +5,7 @@ name = "Uptime Kuma" # The name of the project
 repository_path = "louislam/uptime-kuma" # The path of the repository
 repository_url = "https://github.com/louislam/uptime-kuma" # The full URL to this repository
 default_port = 3001
-docker_compose_path = "compose.yml"
+docker_compose_path = "compose.yaml"
 
 # All commands that should be run inside the VM before docker can be built.
 # These commands are executed only once.
